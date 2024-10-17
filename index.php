@@ -14,6 +14,7 @@
 <body>
     <div id="centrar">
         <div id="form">
+            <h3>Calcular area y perimetro de una figura geometrica</h3>
             <form action="./validaciones/verFigura.php" method="POST">
                 <label for="figura">Elige tu figura geometrica:</label>
                 <select id="figura" name="figura" onblur="validarSelect()">
@@ -25,7 +26,7 @@
                 </select>
                 <p id="errorSelect"></p>
                 <?php if(isset($_GET['selectVacio'])){ echo '<p>El campo no puede estar vacio.</p>';} ?>
-                <button type="submit" id="enviar">Enviar</button>
+                <button type="submit" id="enviar" class="btn btn-primary">Enviar</button>
             </form>
         </div>
     </div>

@@ -5,5 +5,31 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    padding: 50px;
     width: 400px;
+    border: 1.5px solid black;
+    border-radius: 5%;
+    background-color: #5d8f76;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+select{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #ece4bf;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    width: 100%;
 }
