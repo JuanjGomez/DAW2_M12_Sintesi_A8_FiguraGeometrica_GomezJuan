@@ -1,0 +1,2 @@
+# DAW2_M12_Sintesi_A8_FiguraGeometrica_GomezJuan
+Figuras geometricas
