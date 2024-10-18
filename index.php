@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,22 +14,22 @@
             <h3>Calcular area y perimetro de una figura geometrica</h3>
             <form action="./validaciones/verFigura.php" method="POST">
                 <label for="figura">Elige tu figura geometrica:</label>
-                <select id="figura" name="figura" onblur="validarSelect()">
+                <select id="figura" name="figura" onmouseleave="validarSelect()">
                     <option value="" selected disabled>Elige una figura</option>
                     <option value="triangulo">Triangulo</option>
                     <option value="rectangulo">Rectangulo</option>
                     <option value="cuadrado">Cuadrado</option>
                     <option value="circulo">Circulo</option>
                 </select>
-                <p id="errorSelect"></p>
+                <p id="errorSelect" class="error"></p>
                 <?php if(isset($_GET['selectVacio'])){ echo '<p>El campo no puede estar vacio.</p>';} ?>
                 <button type="submit" id="enviar" class="btn btn-primary">Enviar</button>
             </form>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.3/dist/sweetalert2.all.min.js" integrity="sha256-bjbo7LFRGeuwaAMW0213gerdtgV83QAy23xMd9zNkbM=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/validaForm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         const urlParms = new URLSearchParams(window.location.search)
         if(urlParms.get('error') === '1'){

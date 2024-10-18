@@ -1,5 +1,5 @@
-function validarSelect() {
-    var select = document.getElementById('figura').value;
+function validarSelect(){
+    var select = document.getElementById('figura');
     var errorMsg = document.getElementById('errorSelect');
     if (select.value === "") {
         errorMsg.textContent = "Por favor, selecciona una figura.";

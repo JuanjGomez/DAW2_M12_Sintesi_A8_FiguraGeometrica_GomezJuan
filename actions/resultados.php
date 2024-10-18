@@ -9,6 +9,11 @@
         $ultimaFase = true;
         unset($_SESSION['success2']);
     }
+    require_once '../classes/Triangulo.php';
+    require_once '../classes/Rectangulo.php';
+    require_once '../classes/Cuadrado.php';
+    require_once '../classes/Circulo.php';
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
