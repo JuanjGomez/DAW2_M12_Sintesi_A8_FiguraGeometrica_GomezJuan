@@ -1,63 +1,57 @@
 function ladoUno(){
-    let ladoUno = document.getElementById('lado1').value
+    let ladoUno = document.getElementById('lado1')
+    let ladoUnovalor = document.getElementById('lado1').value
     let errorLadoUno = document.getElementById('errorLadoUno')
-    if(ladoUno == null || ladoUno.length == 0 || /^\s+$/.test(ladoUno)){
+    if(ladoUnovalor == null || ladoUnovalor.length == 0 || /^\s+$/.test(ladoUnovalor)){
         errorLadoUno.innerHTML = "El campo no puede estar vacío."
         ladoUno.style.borderColor = "red"
         return false
-    } else if(isNaN(ladoUno)){
-        errorLadoUno.innerHTML = "El valor debe ser un numero."
-        ladoUno.style.borderColor = "red"
-        return false
-    } else if(ladoUno <= 0){
+    } else if(ladoUnovalor <= 0){
         errorLadoUno.innerHTML = "El valor debe ser mayor a cero."
         ladoUno.style.borderColor = "red"
         return false
     } else {
         errorLadoUno.innerHTML = ""
         ladoUno.style.borderColor = ""
+        ladoUnovalor = ""
         return true
     }
 }
 function ladoDos(){
-    let ladoDos = document.getElementById('lado2').value
+    let ladoDos = document.getElementById('lado2')
+    let ladoDosValor = document.getElementById('lado2').value
     let errorLadoDos = document.getElementById('errorLadoDos')
-    if(ladoDos == null || ladoDos.length == 0 || /^\s+$/.test(ladoDos)){
+    if(ladoDosValor == null || ladoDosValor.length == 0 || /^\s+$/.test(ladoDosValor)){
         errorLadoDos.innerHTML = "El campo no puede estar vacío."
         ladoDos.style.borderColor = "red"
         return false
-    } else if(isNaN(ladoDos)){
-        errorLadoDos.innerHTML = "El valor debe ser un numero."
-        ladoDos.style.borderColor = "red"
-        return false
-    } else if(ladoDos <= 0){
+    } else if(ladoDosValor <= 0){
         errorLadoDos.innerHTML = "El valor debe ser mayor a cero."
         ladoDos.style.borderColor = "red"
         return false
     } else {
         errorLadoDos.innerHTML = ""
         ladoDos.style.borderColor = ""
+        ladoDosValor = ""
         return true
     }
 } 
-function ladosTres(){
-    let ladoTres = document.getElementById('lado3').value
+function ladoTres(){
+    let ladoTres = document.getElementById('lado3')
+    let ladoTresValor = document.getElementById('lado3').value
     let errorLadoTres = document.getElementById('errorLadoTres')
-    if(ladoTres == null || ladoTres.length == 0 || /^\s+$/.test(ladoTres)){
+    if(ladoTresValor == null || ladoTresValor.length == 0 || /^\s+$/.test(ladoTresValor)){
         errorLadoTres.innerHTML = "El campo no puede estar vacío."
         ladoTres.style.borderColor = "red"
         return false
-    } else if(isNaN(ladoTres)){
-        errorLadoTres.innerHTML = "El valor debe ser un numero."
-        ladoTres.style.borderColor = "red"
-        return false
-    } else if(ladoTres <= 0){
+    } else if(ladoTresValor <= 0){
         errorLadoTres.innerHTML = "El valor debe ser mayor a cero."
         ladoTres.style.borderColor = "red"
         return false
     } else {
         errorLadoTres.innerHTML = ""
         ladoTres.style.borderColor = ""
+        ladoTresValor = ""
         return true
     }
 }

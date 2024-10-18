@@ -26,44 +26,37 @@
             <form action="../validacions/verLados.php" method="POST">
                 <?php 
                     if($_SESSION['figura'] === 'triangulo'){
-                        echo '<label for="lado1">el lado </label>';
+                        echo '<label for="lado1">Introduce el lado 1(Base):</label>';
                         echo '<input type="number" name="lado1" id="lado1" onblur="ladoUno()">';
                         echo "<p id='errorLadoUno' class='error'></p>";
                         if(isset($_GET['unoVacio'])){echo "<p>El campo no puede estar vacio.</p>";}
-                        if(isset($_GET['unoMal'])){echo '<p>El campo debe ser numerico.</p>';}
-                        echo '<label for="lado2">Introduce el lado 2</label><br>';
+                        echo '<label for="lado2">Introduce el lado 2:</label><br>';
                         echo '<input type="number" id="lado2" name="lado2" onblur="ladoDos()">';
                         echo "<p id='errorLadoDos' class='error'></p>";
                         if(isset($_GET['dosVacio'])){echo "<p>El campo no puede estar vacio.</p>";}
-                        if(isset($_GET['dosMal'])){echo '<p>El campo debe ser numerico.</p>';}
-                        echo '<label for="lado3">Introduce el lado 3</label><br>';
+                        echo '<label for="lado3">Introduce el lado 3:</label><br>';
                         echo '<input type="number" id="lado3" name="lado3" onblur="ladoTres()">';
                         echo "<p id='errorLadoTres' class='error'></p>";
                         if(isset($_GET['tresVacio'])){echo "<p>El campo no puede estar vacio.</p>";}
-                        if(isset($_GET['tresMal'])){echo '<p>El campo debe ser numerico.</p>';}
                     } else if($_SESSION['figura'] === 'rectangulo'){
-                        echo '<label for="lado1">Introduce la base</label><br>';
+                        echo '<label for="lado1">Introduce el lado 1(Base):</label><br>';
                         echo '<input type="number" name="lado1" id="lado1" onblur="ladoUno()">';
                         echo "<p id='errorLadoUno' class='error'></p>";
                         if(isset($_GET['unoVacio'])){echo "<p>El campo no puede estar vacio.</p>";}
-                        if(isset($_GET['unoMal'])){echo '<p>El campo debe ser numerico.</p>';}
-                        echo '<label for="lado2">Introduce la altura</label><br>';
+                        echo '<label for="lado2">Introduce el lado 2(Altura):</label><br>';
                         echo '<input type="number" id="lado2" name="lado2" onblur="ladoDos()">';
                         echo "<p id='errorLadoDos' class='error'></p>";
                         if(isset($_GET['unoVacio'])){echo "<p>El campo no puede estar vacio.</p>";}
-                        if(isset($_GET['unoMal'])){echo '<p>El campo debe ser numerico.</p>';}
                     } else if($_SESSION['figura'] === 'cuadrado'){
-                        echo '<label for="lado1">Introduce un lado del cuadrado:</label><br>';
+                        echo '<label for="lado1">Introduce un lado del cuadrado(Cualquier lado):</label><br>';
                         echo '<input type="number" id="lado1" name="lado1" onblur="ladoUno()">';
                         echo "<p id='errorLadoUno' class='error'></p>";
                         if(isset($_GET['unoVacio'])){echo "<p>El campo no puede estar vacio.</p>";}
-                        if(isset($_GET['unoMal'])){echo '<p>El campo debe ser numerico.</p>';}
                     } else if($_SESSION['figura'] === 'circulo'){
                         echo '<label for="radio">Introduce el radio del circulo:</label><br>';
-                        echo '<input type="number" id="lado1" name="radio" onblur="ladoUno()">';
-                        echo "<p id='errorLadoUno' class='error'></p>";
+                        echo '<input type="number" id="lado1" name="lado1" onblur="ladoUno()">';
+                        echo "<p id='errorLadoTres' class='error'></p>";
                         if(isset($_GET['unoVacio'])){echo "<p>El campo no puede estar vacio.</p>";}
-                        if(isset($_GET['unoMal'])){echo '<p>El campo debe ser numerico.</p>';}
                     } 
                     ?>
                 <button type="submit" id="enviar" class="btn btn-primary">Calcular</button>
