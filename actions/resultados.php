@@ -1,13 +1,8 @@
 <?php
     session_start();
-    if(!isset($_SESSION["figura"]) || !isset($_SESSION["success1"])){
+    if(!isset($_SESSION["figura"])){
         header("Location:../index.php?error=3");
         exit();
-    }
-    $ultimaFase = false;
-    if (isset($_SESSION['success2']) && $_SESSION['success2']) {
-        $ultimaFase = true;
-        unset($_SESSION['success2']);
     }
     require_once '../classes/Triangulo.php';
     require_once '../classes/Rectangulo.php';
