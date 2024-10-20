@@ -11,11 +11,11 @@
             return 4 * $this->lado1;
         }
         public function __toString() {
-            return "Figura: " . $this->tipoFigura . "\n" .
-                "Lado: " . $this->lado1 . "\n" .
-                "Resultados:" . "\n" . 
-                "Área: " . $this->calcularArea() . "\n" .
-                "Perímetro: " . $this->calcularPerimetro() . "\n";
+            return "<p><strong>Figura:</strong> " . $this->tipoFigura . "</p>" .
+                "<p><strong>Lado:</strong> " . $this->lado1 . "</p>" .
+                "<p><strong>Resultados:</strong>" . "</p>" . 
+                "<p><strong>Área:</strong> " . $this->calcularArea() . "</p>" .
+                "<p><strong>Perímetro:</strong> " . $this->calcularPerimetro() . "</p>";
         }
     }
     

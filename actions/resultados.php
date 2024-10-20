@@ -8,7 +8,15 @@
     require_once '../classes/Rectangulo.php';
     require_once '../classes/Cuadrado.php';
     require_once '../classes/Circulo.php';
-    
+    if($_SESSION['figura'] == 'Triangulo'){
+        $figura = new Triangulo($_SESSION['lado1T'], $_SESSION['lado2T'], $_SESSION['lado3T']);
+    } else if($_SESSION['figura'] == 'Rectangulo'){
+        $figura = new Rectangulo($_SESSION['lado1R'], $_SESSION['lado2R']);
+    } else if($_SESSION['figura'] == 'Cuadrado'){
+        $figura = new Cuadrado($_SESSION['lado1C']);
+    } else if($_SESSION['figura'] == 'Circulo'){
+        $figura = new Circulo($_SESSION['radioC']);
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +27,21 @@
     <title>Document</title>
 </head>
 <body>
-
+    <div id="centrar">
+        <div id="Resultado">
+            <?php
+                if($_SESSION['figura'] == 'Triangulo'){
+                    echo $figura;
+                } else if($_SESSION['figura'] == 'Rectangulo'){
+                    echo $figura;
+                } else if($_SESSION['figura'] == 'Cuadrado'){
+                    echo $figura;
+                } else if($_SESSION['figura'] == 'Circulo'){
+                    echo $figura;
+                }
+            ?>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.3/dist/sweetalert2.all.min.js" integrity="sha256-bjbo7LFRGeuwaAMW0213gerdtgV83QAy23xMd9zNkbM=" crossorigin="anonymous"></script>
     <script>
         var ultimaFase = <?php echo json_encode($ultimaFase); ?>;
