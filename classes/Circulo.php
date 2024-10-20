@@ -1,5 +1,5 @@
 <?php
-    require_once './Circulo.php';
+    require_once './FiguraGeometrica.php';
     class Circulo extends FiguraGeometrica{
         public function __construct($tipoFigura,$lado1){
             parent::__construct($tipoFigura,$lado1);
