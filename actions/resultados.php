@@ -31,8 +31,6 @@
     <div id="centrar">
         <div id="Resultado">
 =======
-    <div>
-        <div>
 >>>>>>> origin/Circulo
             <?php
                 if($_SESSION['figura'] == 'triangulo'){
