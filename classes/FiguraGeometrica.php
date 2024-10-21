@@ -2,7 +2,10 @@
     class FiguraGeometrica{
         public $tipoFigura;
         public $lado1;
+<<<<<<< HEAD
         public function __construct($tipoFigura, $lado1){
+=======
+>>>>>>> origin/Circulo
             $this->tipoFigura = $tipoFigura;
             $this->lado1 = $lado1;
         }

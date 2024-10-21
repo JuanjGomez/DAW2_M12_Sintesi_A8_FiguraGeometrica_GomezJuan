@@ -9,6 +9,7 @@
     require_once '../classes/Cuadrado.php';
     require_once '../classes/Circulo.php';
     if($_SESSION['figura'] == 'triangulo'){
+<<<<<<< HEAD
         $figura = new Triangulo($_SESSION['figura'], $_SESSION['lado1T'], $_SESSION['lado2T'], $_SESSION['lado3T']);
     } elseif($_SESSION['figura'] == 'rectangulo'){
         $figura = new Rectangulo($_SESSION['figura'], $_SESSION['lado1R'], $_SESSION['lado2R']);
@@ -16,6 +17,8 @@
         $figura = new Cuadrado($_SESSION['figura'], $_SESSION['lado1C']);
     } elseif($_SESSION['figura'] == 'circulo'){
         $figura = new Circulo($_SESSION['figura'], $_SESSION['radioC']);
+=======
+>>>>>>> origin/Circulo
     }
 ?>
 <!DOCTYPE html>
@@ -27,8 +30,13 @@
     <title>Document</title>
 </head>
 <body>
+<<<<<<< HEAD
     <div id="centrar">
         <div id="Resultado">
+=======
+    <div>
+        <div>
+>>>>>>> origin/Circulo
             <?php
                 if($_SESSION['figura'] == 'triangulo'){
                     echo $figura;
