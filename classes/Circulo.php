@@ -1,5 +1,5 @@
 <?php
-    require_once './FiguraGeometrica.php';
+    require_once 'FiguraGeometrica.php';
     class Circulo extends FiguraGeometrica{
         public function __construct($tipoFigura,$lado1){
             parent::__construct($tipoFigura,$lado1);
@@ -11,7 +11,8 @@
             return 2 * pi() * $this->lado1;
         }
         public function __tostring(){
-            return "<p><strong>Figura: </strong>" . $this->tipoFigura . "</p>" .
+            return "<h3><strong>CALCULOS</strong></h3>" .
+            "<p><strong>Figura: </strong>" . $this->tipoFigura . "</p>" .
             "<p><strong>Radio: </strong>". $this->lado1. "</p>".
             "<h3><strong>RESULTADOS</strong></h3>" .
             "<p><strong>Área: </strong>". $this->calcularArea(). "</p>".

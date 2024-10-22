@@ -38,6 +38,7 @@
                 $_SESSION['lado1T'] = $lado1T;
                 $_SESSION['lado2T'] = $lado2T;
                 $_SESSION['lado3T'] = $lado3T;
+                $_SESSION['success2'] = true;
                 header('Location: ../actions/resultados.php');
                 exit();
             }
@@ -65,6 +66,7 @@
             } else {
                 $_SESSION['lado1R'] = $lado1R;
                 $_SESSION['lado2R'] = $lado2R;
+                $_SESSION['success2'] = true;
                 header('Location: ../actions/resultados.php');
                 exit();
             }
@@ -82,6 +84,7 @@
                 exit();
             } else {
                 $_SESSION['lado1C'] = $lado1C;
+                $_SESSION['success2'] = true;
                 header('Location: ../actions/resultados.php');
                 exit();
             }
@@ -99,6 +102,7 @@
                 exit();
             } else {
                 $_SESSION['radioC'] = $radioC;
+                $_SESSION['success2'] = true;
                 header('Location: ../actions/resultados.php');
                 exit();
             }

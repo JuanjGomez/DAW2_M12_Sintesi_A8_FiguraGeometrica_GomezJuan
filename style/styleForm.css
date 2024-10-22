@@ -1,15 +1,25 @@
+body{
+    background-image: url(../img/background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
 #centrar{
     display: flex;
+    margin: 0;
 }
 #form{
-    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: 550px;
     align-items: center;
     justify-content: center;
     padding: 50px;
     width: 400px;
     border: 2px solid black;
     border-radius: 5%;
-    background-color: #5d8f76;
+    background-color: #68779d;
     font-family: Arial, sans-serif;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -49,4 +59,23 @@ input{
     transition: all 0.3s ease;
     margin-bottom: 20px;
     width: 100%;
+}
+#Resultado{
+    margin-top:50px;
+    margin-left:550px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: #68779d;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+#botones{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
 }

@@ -22,7 +22,7 @@
                     <option value="circulo">Circulo</option>
                 </select>
                 <p id="errorSelect" class="error"></p>
-                <?php if(isset($_GET['selectVacio'])){ echo '<p>El campo no puede estar vacio.</p>';} ?>
+                <?php if(isset($_GET['selectVacio'])){ echo '<p class="error">El campo no puede estar vacio.</p>';} ?>
                 <button type="submit" id="enviar" class="btn btn-primary">Enviar</button>
             </form>
         </div>

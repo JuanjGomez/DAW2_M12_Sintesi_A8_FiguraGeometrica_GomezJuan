@@ -22,6 +22,6 @@
             //de ser sobreescrit si es necessari
         }
         function __destruct(){
-            echo "La figura " . $this->tipoFigura . " ha sido destruida.";
+            echo "<strong>La figura " . $this->tipoFigura . " ha sido destruida.</strong>";
         }
     }
