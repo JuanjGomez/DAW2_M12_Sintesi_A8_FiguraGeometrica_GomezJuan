@@ -8,6 +8,18 @@
             $this->lado2 = $lado2;
             $this->lado3 = $lado3;
         }
+        public function set_Lado2($lado2){
+            $this->lado2 = $lado2;
+        }
+        public function set_Lado3($lado3){
+            $this->lado3 = $lado3;
+        }
+        public function get_Lado2(){
+            return $this->lado2;
+        }
+        public function get_Lado3(){
+            return $this->lado3;
+        }
         public function calcularArea(){
             $s = ($this->lado1 + $this->lado2 + $this->lado3) / 2;
             return sqrt($s * ($s - $this->lado1) * ($s - $this->lado2) * ($s - $this->lado3));
